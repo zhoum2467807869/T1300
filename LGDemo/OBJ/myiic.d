@@ -1,5 +1,5 @@
-..\obj\myiic.o: ..\LANNGE_HARDWARE\IIC\myiic.c
-..\obj\myiic.o: ..\LANNGE_HARDWARE\IIC\myiic.h
+..\obj\myiic.o: ..\LANNGE_HARDWARE\myiic.c
+..\obj\myiic.o: ..\LANNGE_HARDWARE\myiic.h
 ..\obj\myiic.o: ..\SYSTEM\sys\sys.h
 ..\obj\myiic.o: ..\USER\stm32f10x.h
 ..\obj\myiic.o: ..\CORE\core_cm3.h

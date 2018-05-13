@@ -1,6 +1,6 @@
-..\obj\24cxx.o: ..\LANNGE_HARDWARE\24CXX\24cxx.c
-..\obj\24cxx.o: ..\LANNGE_HARDWARE\24CXX\24cxx.h
-..\obj\24cxx.o: ..\LANNGE_HARDWARE\IIC\myiic.h
+..\obj\24cxx.o: ..\LANNGE_HARDWARE\24cxx.c
+..\obj\24cxx.o: ..\LANNGE_HARDWARE\24cxx.h
+..\obj\24cxx.o: ..\LANNGE_HARDWARE\myiic.h
 ..\obj\24cxx.o: ..\SYSTEM\sys\sys.h
 ..\obj\24cxx.o: ..\USER\stm32f10x.h
 ..\obj\24cxx.o: ..\CORE\core_cm3.h

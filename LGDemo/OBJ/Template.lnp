@@ -26,12 +26,22 @@
 "..\obj\rtc.o"
 "..\obj\key.o"
 "..\obj\channel.o"
+"..\obj\touch.o"
+"..\obj\24cxx.o"
+"..\obj\myiic.o"
 "..\obj\homeactivity.o"
 "..\obj\component.o"
 "..\obj\delayactivity.o"
 "..\obj\switchactivity.o"
 "..\obj\timeractivity.o"
-"..\obj\otheractivity.o"
+"..\obj\activity.o"
+"..\obj\timeactivity.o"
+"..\obj\pwdactivity.o"
+"..\obj\ipactivity.o"
+"..\obj\auzactivity.o"
+"..\obj\uvovactivity.o"
+"..\obj\readme_gui.o"
+"..\obj\pagespinneractivity.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\Template.map" -o ..\OBJ\Template.axf

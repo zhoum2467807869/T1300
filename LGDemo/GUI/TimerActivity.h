@@ -10,4 +10,7 @@ void (*timerActivityPage)(void);
 
 extern TimerActivity timerActivity;
 void timerActivityPage(void);
+void timerActivityAction(void);
+void timerActivitySelectItem(void);
 #endif
+

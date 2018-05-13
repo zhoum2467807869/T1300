@@ -62,20 +62,19 @@ u8 encoder()//判断编码器状态
     return encoder_key();//扫描编码器按键状态
 }
 u8 encoder_key()//判断编码器按键状态
-{    
-    if(!(ENCODER_KEY==LAST_KEY_LEVEL)) //编码器按键电平发生装换
+{   
+    u8 static  key_up=1;//按键按松开标志
+    if(key_up&&ENCODER_KEY==0)
         {
-            delay_ms(20);//消抖
-            if(!(ENCODER_KEY==LAST_KEY_LEVEL)) //编码器按键电平发生装换
+            delay_ms(100);
+            key_up=0;
+            if(ENCODER_KEY==0)
                 {
-                     if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12)==0)
-                      return EN_KEY_DOWN;
-										 else
-											return EN_KEY_UP;											 
+                  return EN_KEY_DOWN;         
                 }
-             LAST_KEY_LEVEL=ENCODER_KEY;
         }
-				return EN_KEY_UP;
+    else if(ENCODER_KEY==1)key_up=1;
+		return EN_KEY_UP;
 }
 u8 relay_key() //判断时序按键状态
 {

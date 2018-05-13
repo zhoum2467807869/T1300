@@ -12,4 +12,7 @@ void  (*switchActivitypage)(void);
 
 extern SwitchActivity switchActivity;
 void  switchActivitypage(void);
+void switchActivityAction(void);
+void switchActivitySelectItem(void);
 #endif
+

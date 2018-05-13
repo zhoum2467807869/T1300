@@ -5,13 +5,11 @@
 #include "FSMC.H"
 #include "Dis_API.h"
 #include "rtc.h"
-#include "HomeActivity.h"
-#include "DelayActivity.h" 
-#include "SwitchActivity.h"
-#include "TimerActivity.h"
-#include "OtherActivity.h"
 #include "key.h"
+#include "Activity.h"
 #include "Channel.h"
+#include "24cxx.h"
+#include "touch.h"
 extern _calendar_obj calendar;
 #endif
 

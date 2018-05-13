@@ -140,7 +140,9 @@ u16 TFT_ReadPoint(u16 x,u16 y)
     TFT_COLOR=TFT_COLOR|temp1|temp2;
     return  TFT_COLOR;
 }
-
+void LCD_Clear(u16 corlor){
+Fill_Fast_Rec(0,0,220,176,corlor);
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*ÏÔÊ¾×Ö·ûºÍÊý×Ö*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -641,17 +643,28 @@ void gui_fill_ellipse(u16 x0,u16 y0,u16 rx,u16 ry,u16 color)
             if(y)gui_draw_hline(x0-x,y0-y,2*x,color);
         }
 }
-void LCD_DrawLtrigo(u16 x1, u16 y1, u16 x2, u16 y2,u16 color)
+void LCD_DrawLtrigo(u16 x1, u16 y1, u16 x2, u16 y2,u16 color,u8 dir)
 {
 
     u8 i;
     u16 y;
-
+	  u8 x;
+    if(dir==DOWN){
     y =y1+(y2-y1)/2;
     for(i=0; i<((y2-y1)/2); i++)
         {
             LCD_DrawLine(x1+i,y+i,x2-i,y+i,color);
         }
+			}else if(dir==RIGHT){
+			
+		  x=x1+(x2-x1)/2;
+    for(i=0; i<(y2-y1)/2;i++)
+        {
+            LCD_DrawLine(x+i,y1+i,x+i,y2-i,color);
+        }		
+				
+			}
+				
 }
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -17,6 +17,7 @@
 #define White      0xFFFF
 #define Black      0x0000
 #define Blue       0x001F
+#define Red        0xF800 
 #define Green_200  0x2589
 #define Blue_200	 0x2B12			
 #define Blue_50    0x9EDD
@@ -24,7 +25,10 @@
 #define Blue_250   0x3A39
 #define Blue_300   0x001F
 
-
+#define RIGHT      1
+#define LEFT       2
+#define UP         3
+#define DOWN       4
 
 extern const char Font_16X8[95][16];//16号宋体
 extern const char Font_24X12[95][36];//24号宋体
@@ -34,12 +38,12 @@ extern const char LOGO[];
 typedef struct{
 	
 void (*Fill_Fast_Rec)(u16,u16,u16,u16,u16);
-void (*TFT_ShowString)(uint16_t,uint16_t,char,uint8_t,uint16_t);
+void (*TFT_ShowString)(uint16_t,uint16_t,char*,uint8_t,uint16_t);
 void (*Write_Word_Center)(u16 sx,u16 sy,u16 ex,u16 ey,u8 size,char *p,u16 color);
 void (*TFT_ShowNum)(uint16_t x,uint16_t y,int Num,uint8_t size,uint16_t color);
 void (*gui_draw_arc)(u16 sx,u16 sy,u16 ex,u16 ey,u16 rx,u16 ry,u16 r,u16 color,u8 mode);	
 void (*gui_4_yuanhu_EMPTY)(u16 sx,u16 sy,u16 ex,u16 ey,u16 r,u16 color);	
-void (*LCD_DrawLtrigo)(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);	
+void (*LCD_DrawLtrigo)(u16 x1, u16 y1, u16 x2, u16 y2,u16 color,u8 dir);	
 void (*TFT_Show_Any_Picture)(u16 sx,u16 sy,u16 x_wight,u16 y_height,u16 color,const char *Picture);	
 	
 }_DisAPI;
@@ -51,6 +55,9 @@ void TFT_init(void);//液晶初始化
 void Mirro_Y(u16 *y_pos);//镜面对称
 void OPEN_WINDOW(u16 x,u16 y,u16 x_height,u16 y_width);//开窗
 void Fill_Fast_Rec(u16 x,u16 y,u16 x_height,u16 y_width,u16 color);//填充颜色
+void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2,uint16_t color);
+void LCD_Clear(u16 corlor);
+void gui_fill_circle(u16 x0,u16 y0,u16 r,u16 color);
 void TFT_DrawPoint(uint16_t x,uint16_t y,uint16_t color);//描点
 u16 TFT_ReadPoint(u16 x,u16 y);//读点
 void TFT_Draw_One_Char(uint16_t x,uint16_t y,char word,uint8_t size,uint16_t color);//在指定的位置显示一个字符(x,y,char,size,color)
@@ -73,7 +80,7 @@ void gui_draw_hline(u16 x0,u16 y0,u16 len,u16 color);//画水平线
 void gui_draw_ellipse(u16 x0, u16 y0, u16 rx, u16 ry,u16 color) ;//画椭圆
 void gui_fill_ellipse(u16 x0,u16 y0,u16 rx,u16 ry,u16 color);//填充椭圆
 uint16_t rgb24_2_565(int R,int G,int B);//颜色格式转换
-void LCD_DrawLtrigo(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);
+void LCD_DrawLtrigo(u16 x1, u16 y1, u16 x2, u16 y2,u16 color,u8 dir);
 
 void TFT_Show_Any_Picture(u16 sx,u16 sy,u16 x_wight,u16 y_height,u16 color,const char *Picture);//显示任意图标
 
