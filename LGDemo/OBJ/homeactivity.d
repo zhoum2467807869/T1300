@@ -53,8 +53,8 @@
 ..\obj\homeactivity.o: ..\GUI\IPActivity.h
 ..\obj\homeactivity.o: ..\GUI\AUZActivity.h
 ..\obj\homeactivity.o: ..\GUI\UVOVActivity.h
+..\obj\homeactivity.o: ..\LANNGE_HARDWARE\Channel.h
 ..\obj\homeactivity.o: ..\GUI\PageSpinnerActivity.h
 ..\obj\homeactivity.o: ..\LANNGE_HARDWARE\touch.h
 ..\obj\homeactivity.o: ..\LANNGE_HARDWARE\24cxx.h
 ..\obj\homeactivity.o: ..\LANNGE_HARDWARE\myiic.h
-..\obj\homeactivity.o: ..\LANNGE_HARDWARE\Channel.h

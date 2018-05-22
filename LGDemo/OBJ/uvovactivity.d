@@ -44,9 +44,9 @@
 ..\obj\uvovactivity.o: ..\GUI\HomeActivity.h
 ..\obj\uvovactivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\uvovactivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\uvovactivity.o: ..\USER\SwitchActivity.h
 ..\obj\uvovactivity.o: ..\USER\Activity.h
 ..\obj\uvovactivity.o: ..\GUI\DelayActivity.h
-..\obj\uvovactivity.o: ..\USER\SwitchActivity.h
 ..\obj\uvovactivity.o: ..\GUI\TimerActivity.h
 ..\obj\uvovactivity.o: ..\GUI\OtherActivity.h
 ..\obj\uvovactivity.o: ..\USER\TimeActivity.h

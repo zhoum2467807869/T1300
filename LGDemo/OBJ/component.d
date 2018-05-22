@@ -43,9 +43,9 @@
 ..\obj\component.o: ..\GUI\HomeActivity.h
 ..\obj\component.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\component.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\component.o: ..\USER\SwitchActivity.h
 ..\obj\component.o: ..\USER\Activity.h
 ..\obj\component.o: ..\GUI\DelayActivity.h
-..\obj\component.o: ..\USER\SwitchActivity.h
 ..\obj\component.o: ..\GUI\TimerActivity.h
 ..\obj\component.o: ..\GUI\OtherActivity.h
 ..\obj\component.o: ..\USER\TimeActivity.h

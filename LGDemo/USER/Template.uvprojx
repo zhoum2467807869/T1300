@@ -175,7 +175,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -439,6 +439,11 @@
               <FilePath>..\SYSTEM\sys\sys.c</FilePath>
             </File>
             <File>
+              <FileName>FSMC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LANNGE_HARDWARE\FSMC.c</FilePath>
+            </File>
+            <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\SYSTEM\usart\usart.c</FilePath>
@@ -542,11 +547,6 @@
               <FileName>Font.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LANNGE_HARDWARE\Font.c</FilePath>
-            </File>
-            <File>
-              <FileName>FSMC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LANNGE_HARDWARE\FSMC.c</FilePath>
             </File>
             <File>
               <FileName>rtc.c</FileName>

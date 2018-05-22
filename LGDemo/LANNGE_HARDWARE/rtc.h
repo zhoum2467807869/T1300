@@ -17,6 +17,7 @@ typedef struct
 	vu8  w_month;
 	vu8  w_date;
 	vu8  week;		 
+	u8   flag_one_sec;
 }_calendar_obj;		
 extern u8 flag_ten_sec;
 extern _calendar_obj calendar;	//日历结构体

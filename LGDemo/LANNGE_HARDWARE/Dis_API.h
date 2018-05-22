@@ -45,7 +45,7 @@ void (*gui_draw_arc)(u16 sx,u16 sy,u16 ex,u16 ey,u16 rx,u16 ry,u16 r,u16 color,u
 void (*gui_4_yuanhu_EMPTY)(u16 sx,u16 sy,u16 ex,u16 ey,u16 r,u16 color);	
 void (*LCD_DrawLtrigo)(u16 x1, u16 y1, u16 x2, u16 y2,u16 color,u8 dir);	
 void (*TFT_Show_Any_Picture)(u16 sx,u16 sy,u16 x_wight,u16 y_height,u16 color,const char *Picture);	
-	
+void (*Write_Num_Center)(u16 sx,u16 sy,u16 ex,u16 ey,u8 size,int Num,u16 color,u8 ZF,u8 Point);
 }_DisAPI;
 
 

@@ -1,17 +1,20 @@
 #ifndef __CHANNEL_H
 #define __CHANNEL_H
 
+#include "SwitchActivity.h"
 typedef struct{
   
 	void (*initChannel)(void);
-
-
+  u8 (*sequenceToDelayOpenClose)(u8*);
+  u8 flashChannel;//需要刷新的CHANNEL
+	u8 (*getflashChannel)(void);
+	u8 sequenceAction;
 }Channel;
 
 extern Channel channel;
+#define OPEN 1
+#define CLOSE 2
 
-                  
-                  
 #define SetCH1       GPIO_SetBits(GPIOC,GPIO_Pin_0);
 #define SetCH2       GPIO_SetBits(GPIOC,GPIO_Pin_1);
 #define SetCH3       GPIO_SetBits(GPIOC,GPIO_Pin_2);
@@ -40,6 +43,8 @@ extern Channel channel;
 #define ReadCH8      GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_7)
 
 void initChannel(void);
+u8 sequenceToDelayOpenClose(u8* actionStatus);
+u8 getflashChannel(void);
 #endif
 
 

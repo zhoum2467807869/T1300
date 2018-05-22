@@ -10,10 +10,10 @@ typedef struct{
 	
 	
 }TimeActivity;
-
 extern TimeActivity timeActivity;
+
 void timeActivityPage(void);
 void timeActivityAction(void);
 void timeActivityItemSelect(void);
-
+void flashTimeItem(u8 anchor,u8 lastanchor);
 #endif

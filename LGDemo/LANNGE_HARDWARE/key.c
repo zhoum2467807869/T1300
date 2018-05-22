@@ -74,7 +74,7 @@ u8 encoder_key()//ÅÐ¶Ï±àÂëÆ÷°´¼ü×´Ì¬
                 }
         }
     else if(ENCODER_KEY==1)key_up=1;
-		return EN_KEY_UP;
+		return XNULL;
 }
 u8 relay_key() //ÅÐ¶ÏÊ±Ðò°´¼ü×´Ì¬
 {
@@ -85,6 +85,7 @@ u8 relay_key() //ÅÐ¶ÏÊ±Ðò°´¼ü×´Ì¬
             key_up=0;
             if(RELAY_KEY==0)
                 {
+
                   return RE_KEY_DOWN;         
                 }
         }

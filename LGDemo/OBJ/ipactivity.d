@@ -44,9 +44,9 @@
 ..\obj\ipactivity.o: ..\GUI\HomeActivity.h
 ..\obj\ipactivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\ipactivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\ipactivity.o: ..\USER\SwitchActivity.h
 ..\obj\ipactivity.o: ..\USER\Activity.h
 ..\obj\ipactivity.o: ..\GUI\DelayActivity.h
-..\obj\ipactivity.o: ..\USER\SwitchActivity.h
 ..\obj\ipactivity.o: ..\GUI\TimerActivity.h
 ..\obj\ipactivity.o: ..\GUI\OtherActivity.h
 ..\obj\ipactivity.o: ..\USER\TimeActivity.h

@@ -12,7 +12,9 @@ int main()
     key_init();
     channel.initChannel();
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
-    homeActivity.mainOpenSplash();
+	  auzActivity.auzActivityUserPage();//检测用完使用次数;
+	  activity.readData();//设备初始化数据
+    //homeActivity.mainOpenSplash();
 	  activity.activeActivity=activity.HOME;       
     while(1)
         {

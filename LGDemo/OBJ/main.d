@@ -48,8 +48,8 @@
 ..\obj\main.o: ..\LANNGE_HARDWARE\24cxx.h
 ..\obj\main.o: ..\LANNGE_HARDWARE\myiic.h
 ..\obj\main.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\main.o: ..\USER\SwitchActivity.h
 ..\obj\main.o: ..\GUI\DelayActivity.h
-..\obj\main.o: SwitchActivity.h
 ..\obj\main.o: ..\GUI\TimerActivity.h
 ..\obj\main.o: ..\GUI\OtherActivity.h
 ..\obj\main.o: TimeActivity.h

@@ -44,9 +44,9 @@
 ..\obj\timeractivity.o: ..\GUI\HomeActivity.h
 ..\obj\timeractivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\timeractivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\timeractivity.o: ..\USER\SwitchActivity.h
 ..\obj\timeractivity.o: ..\USER\Activity.h
 ..\obj\timeractivity.o: ..\GUI\DelayActivity.h
-..\obj\timeractivity.o: ..\USER\SwitchActivity.h
 ..\obj\timeractivity.o: ..\GUI\TimerActivity.h
 ..\obj\timeractivity.o: ..\GUI\OtherActivity.h
 ..\obj\timeractivity.o: ..\USER\TimeActivity.h

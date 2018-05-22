@@ -1,6 +1,6 @@
 #include "PageSpinnerActivity.h"
 
-PageSpinnerActivity SpinnerActivity= {pageSpinnerActivity,pageSpinnerActivityAction};
+PageSpinnerActivity SpinnerActivity= {pageSpinnerActivity,pageSpinnerActivityAction,showotherItem};
 char* otherPage[5]={"TIME","PWD","UVOV","IP","AUZ"};
 char* itemName[] = {"HOME","DELAY","SWITCH","TIMER","OTHER"};
 void pageSpinnerActivity()
@@ -20,11 +20,11 @@ void pageSpinnerActivityAction()
     while(activity.activeActivity==activity.SPINNER)
         {
             //系统必要执行函数
+					 activity.executeInWhile();
             spinnerAction();
         }
 
 }
-
 void spinnerAction()
 {
 
@@ -239,8 +239,10 @@ void spinnerAction()
             else if(anchor==5)
                 {
 									
-									  showItem(0,32,80,20,itemName,4,Blue_50);									  
+									  showItem(0,32,80,20,itemName,4,Blue_50);		
+           								
 									  component.ShowpageSpinner(0);
+									           showotherItem(85,50,70,20,otherPage,0,Blue_100);	
 									  spinner_0=1;
                     anchor=6;
 									  delay_ms(400);
@@ -288,10 +290,12 @@ void showotherItem(u8 x,u8 y,u8 width,u8 height,char* itemName[],u8 index,u16 co
 
 void showItem(u8 x,u8 y,u8 width,u8 height,char* itemName[],u8 index,u16 corlor)
 {
+
     Fill_Fast_Rec(x,y+(height+2)*index,width,height,corlor);
     Write_Word_Center(x,y+(height+2)*index,x+width,y+height+(height+2)*index,16,itemName[index],Black);
     if(index==4)
         {
             DisAPI.LCD_DrawLtrigo(65,125,75,135,Black,RIGHT);
         }
+
 }

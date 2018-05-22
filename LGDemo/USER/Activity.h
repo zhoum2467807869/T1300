@@ -14,6 +14,12 @@
 #include "PageSpinnerActivity.h"
 #include "key.h"
 #include "touch.h"
+
+#define ADD 1
+#define SUB 2
+#define OFF 0
+#define ON  1
+
 typedef struct {
 	
   u8 HOME;
@@ -29,10 +35,21 @@ typedef struct {
 	u8 activeActivity;
 	void (*creatActivity)(u8);
 	u8 (*toucharea)(u8,u8,u8,u8,u8);
-
+  u8 (*scanAddSubstruct)(u8,u8,u8,u8);
+	u8 (*encoderToAddSub)(u8* ,u8*);
+	void (*readData)(void);
+	void (*flashTime)(void);
+	void (*executeInWhile)(void);
 }ActivityStructure;
 extern ActivityStructure activity;
 void createActivity(u8 activityName);
 u8 toucharea(u8 x,u8 y,u8 width,u8 height,u8 index);
+u8 scanAddSubstruct(u8 x,u8 y,u8 width,u8 height);
+u8 encoderToAddSub(u8* flag,u8* state);
+
+void executeInWhile(void);
+void readData(void);
+void flashTime(void);
+
 #endif
 

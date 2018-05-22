@@ -44,9 +44,9 @@
 ..\obj\auzactivity.o: ..\GUI\HomeActivity.h
 ..\obj\auzactivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\auzactivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\auzactivity.o: ..\USER\SwitchActivity.h
 ..\obj\auzactivity.o: ..\USER\Activity.h
 ..\obj\auzactivity.o: ..\GUI\DelayActivity.h
-..\obj\auzactivity.o: ..\USER\SwitchActivity.h
 ..\obj\auzactivity.o: ..\GUI\TimerActivity.h
 ..\obj\auzactivity.o: ..\GUI\OtherActivity.h
 ..\obj\auzactivity.o: ..\USER\TimeActivity.h

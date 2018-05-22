@@ -5,6 +5,7 @@
 
 _calendar_obj calendar;//时钟结构体
 u8 flag_ten_sec=0;
+
 /*秒数：用于判断是否与闹钟时间相等*/
 static void RTC_NVIC_Config(void)
 {
@@ -94,6 +95,7 @@ void RTC_IRQHandler(void)
     if (RTC_GetITStatus(RTC_IT_SEC) != RESET)//秒钟中断
         {
 					  flag_ten_sec++;
+					  if(calendar.flag_one_sec!=1)calendar.flag_one_sec=1;
             RTC_Get();//更新时间			
 		       						
         }

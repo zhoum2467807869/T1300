@@ -47,8 +47,8 @@
 ..\obj\activity.o: ..\LANNGE_HARDWARE\24cxx.h
 ..\obj\activity.o: ..\LANNGE_HARDWARE\myiic.h
 ..\obj\activity.o: ..\LANNGE_HARDWARE\Channel.h
-..\obj\activity.o: ..\GUI\DelayActivity.h
 ..\obj\activity.o: ..\USER\SwitchActivity.h
+..\obj\activity.o: ..\GUI\DelayActivity.h
 ..\obj\activity.o: ..\GUI\TimerActivity.h
 ..\obj\activity.o: ..\GUI\OtherActivity.h
 ..\obj\activity.o: ..\USER\TimeActivity.h

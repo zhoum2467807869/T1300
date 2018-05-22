@@ -43,9 +43,9 @@
 ..\obj\pagespinneractivity.o: ..\GUI\HomeActivity.h
 ..\obj\pagespinneractivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\pagespinneractivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\pagespinneractivity.o: ..\USER\SwitchActivity.h
 ..\obj\pagespinneractivity.o: ..\USER\Activity.h
 ..\obj\pagespinneractivity.o: ..\GUI\DelayActivity.h
-..\obj\pagespinneractivity.o: ..\USER\SwitchActivity.h
 ..\obj\pagespinneractivity.o: ..\GUI\TimerActivity.h
 ..\obj\pagespinneractivity.o: ..\GUI\OtherActivity.h
 ..\obj\pagespinneractivity.o: ..\USER\TimeActivity.h

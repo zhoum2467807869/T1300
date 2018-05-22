@@ -1,6 +1,6 @@
 #include "Dis_API.h"
 
-_DisAPI DisAPI={Fill_Fast_Rec,TFT_ShowString,Write_Word_Center,TFT_ShowNum,gui_draw_arc,gui_4_yuanhu_EMPTY,LCD_DrawLtrigo,TFT_Show_Any_Picture};
+_DisAPI DisAPI={Fill_Fast_Rec,TFT_ShowString,Write_Word_Center,TFT_ShowNum,gui_draw_arc,gui_4_yuanhu_EMPTY,LCD_DrawLtrigo,TFT_Show_Any_Picture,Write_Num_Center};
 
 //“∫æß≥ı ºªØ
 void TFT_init(void)

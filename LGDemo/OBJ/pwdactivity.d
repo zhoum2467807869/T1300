@@ -44,9 +44,9 @@
 ..\obj\pwdactivity.o: ..\GUI\HomeActivity.h
 ..\obj\pwdactivity.o: ..\LANNGE_HARDWARE\rtc.h
 ..\obj\pwdactivity.o: ..\LANNGE_HARDWARE\Channel.h
+..\obj\pwdactivity.o: ..\USER\SwitchActivity.h
 ..\obj\pwdactivity.o: ..\USER\Activity.h
 ..\obj\pwdactivity.o: ..\GUI\DelayActivity.h
-..\obj\pwdactivity.o: ..\USER\SwitchActivity.h
 ..\obj\pwdactivity.o: ..\GUI\TimerActivity.h
 ..\obj\pwdactivity.o: ..\GUI\OtherActivity.h
 ..\obj\pwdactivity.o: ..\USER\TimeActivity.h
